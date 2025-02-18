@@ -1,0 +1,79 @@
+[debug] [2025-02-17T23:44:15.838Z] ----------------------------------------------------------------------
+[debug] [2025-02-17T23:44:15.845Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2025-02-17T23:44:15.845Z] CLI Version:   13.31.1
+[debug] [2025-02-17T23:44:15.845Z] Platform:      darwin
+[debug] [2025-02-17T23:44:15.845Z] Node Version:  v22.14.0
+[debug] [2025-02-17T23:44:15.846Z] Time:          Tue Feb 18 2025 10:44:15 GMT+1100 (Australian Eastern Daylight Time)
+[debug] [2025-02-17T23:44:15.846Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-17T23:44:15.849Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-17T23:44:15.850Z] > authorizing via signed-in user (beldiaethan69@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/ethan/TEST
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-02-17T23:44:27.527Z] Checked if tokens are valid: true, expires at: 1739839406352
+[debug] [2025-02-17T23:44:27.527Z] Checked if tokens are valid: true, expires at: 1739839406352
+[debug] [2025-02-17T23:44:27.528Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-02-17T23:44:28.529Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-02-17T23:44:28.529Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project foodiefinder-21f18 (FoodieFinder) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-02-17T23:44:30.248Z] Checked if tokens are valid: true, expires at: 1739839406352
+[debug] [2025-02-17T23:44:30.248Z] Checked if tokens are valid: true, expires at: 1739839406352
+[debug] [2025-02-17T23:44:30.248Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/foodiefinder-21f18/billingInfo [none]
+[debug] [2025-02-17T23:44:31.955Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/foodiefinder-21f18/billingInfo 200
+[debug] [2025-02-17T23:44:31.956Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/foodiefinder-21f18/billingInfo {"name":"projects/foodiefinder-21f18/billingInfo","projectId":"foodiefinder-21f18","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-02-17T23:44:31.957Z] Checked if tokens are valid: true, expires at: 1739839406352
+[debug] [2025-02-17T23:44:31.957Z] Checked if tokens are valid: true, expires at: 1739839406352
+[debug] [2025-02-17T23:44:31.957Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/foodiefinder-21f18/services/sqladmin.googleapis.com [none]
+[debug] [2025-02-17T23:44:31.957Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/foodiefinder-21f18/services/sqladmin.googleapis.com x-goog-quota-user=projects/foodiefinder-21f18
+[debug] [2025-02-17T23:44:33.458Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/foodiefinder-21f18/services/sqladmin.googleapis.com 200
+[debug] [2025-02-17T23:44:33.458Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/foodiefinder-21f18/services/sqladmin.googleapis.com [omitted]
+[warn] ⚠  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2025-02-17T23:44:33.459Z] Checked if tokens are valid: true, expires at: 1739839406352
+[debug] [2025-02-17T23:44:33.459Z] Checked if tokens are valid: true, expires at: 1739839406352
+[debug] [2025-02-17T23:44:33.459Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/foodiefinder-21f18/services/sqladmin.googleapis.com:enable [none]
+[debug] [2025-02-17T23:44:33.459Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/foodiefinder-21f18/services/sqladmin.googleapis.com:enable x-goog-quota-user=projects/foodiefinder-21f18
+[debug] [2025-02-17T23:44:34.018Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/foodiefinder-21f18/services/sqladmin.googleapis.com:enable 200
+[debug] [2025-02-17T23:44:34.019Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/foodiefinder-21f18/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2025-02-17T23:44:44.022Z] Checked if tokens are valid: true, expires at: 1739839406352
+[debug] [2025-02-17T23:44:44.022Z] Checked if tokens are valid: true, expires at: 1739839406352
+[debug] [2025-02-17T23:44:44.023Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/foodiefinder-21f18/services/sqladmin.googleapis.com [none]
+[debug] [2025-02-17T23:44:44.023Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/foodiefinder-21f18/services/sqladmin.googleapis.com x-goog-quota-user=projects/foodiefinder-21f18
+[debug] [2025-02-17T23:44:45.411Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/foodiefinder-21f18/services/sqladmin.googleapis.com 200
+[debug] [2025-02-17T23:44:45.411Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/foodiefinder-21f18/services/sqladmin.googleapis.com [omitted]
+[info] ✔  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] ✔  Wrote dataconnect/dataconnect.yaml 
+[info] ✔  Wrote dataconnect/schema/schema.gql 
+[info] ✔  Wrote dataconnect/connector/connector.yaml 
+[info] ✔  Wrote dataconnect/connector/queries.gql 
+[info] ✔  Wrote dataconnect/connector/mutations.gql 
+[info] ✔  Detected WEB app in directory /Users/ethan/TEST 
+[info] i  Wrote new config to /Users/ethan/TEST/dataconnect/connector/connector.yaml 
+[info] i  dataconnect: downloading dataconnect-emulator-1.8.1... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-1.8.1..."}}
+[debug] [2025-02-17T23:44:56.446Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-macos-v1.8.1 
+[debug] [2025-02-17T23:44:56.956Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-macos-v1.8.1 200
+[debug] [2025-02-17T23:44:56.956Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-macos-v1.8.1 [stream]
+[info] I0218 10:45:01.809996   22047 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/ethan/TEST/dataconnect-generated/js/default-connector"
+I0218 10:45:01.818885   22047 generate.go:40] Generated all sources. Writing them to disk...
+I0218 10:45:01.820804   22047 collector.go:107] connector "default" javascriptSdk wrote into "/Users/ethan/TEST/dataconnect-generated/js/default-connector"
+Generated sources: index.d.ts [259B] esm/index.esm.js [163B] esm/package.json [17B] react/index.d.ts [181B] react/package.json [468B] react/esm/package.json [17B] index.cjs.js [204B] package.json [819B] README.md [2740B] react/index.cjs.js [195B] react/esm/index.esm.js [182B] 
+I0218 10:45:01.825864   22047 installsdk.go:76] Running command: /usr/local/bin/npm install file:dataconnect-generated/js/default-connector
+
